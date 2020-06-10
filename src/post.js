@@ -9,8 +9,8 @@ class Post extends Component {
         return(
             <div>
                 <CreatingPost postParagraph="This is an example paragraph" counter={1}/>
-                <CreatingPost postParagraph="This is an example paragraph" counter={2}/>
-                <CreatingPost postParagraph="This is an example paragraph" counter={3}/>
+                <CreatingPost postParagraph="This is an example paragraph" counter={11}/>
+                <CreatingPost postParagraph="This is an example paragraph" counter={111}/>
             </div>
         )
     }
