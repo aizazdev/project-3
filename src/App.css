@@ -1,44 +1,134 @@
-.App {
-  text-align: center;
+/* Hero JS page -- Navbar */
+/* .navbar {
+  background: black;
+  height: 130px;
+  padding: 20px;
+  width: 100%;
 }
-
-.App-logo {
-  height: 20vmin;
-  pointer-events: none;
+.navbar-logo img {
+ height: 120px; 
+ float: left;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.post-body { 
-  width: 500px;
-  margin-left: 450px;
-  margin-top: 20px;
-  background-color: brown;
-  text-align: center;
-  padding: 10px;
-  box-shadow: black 3px 3px 20px;  
-}
-.post-body p {
+.navbar-items {
   color: white;
+  text-decoration: none;
+  width: 70%;
 }
-.post-body button {
-  height: 30px;
-  width: 70px;
-  background-color: white;
-  border: brown;
-  border-radius: 5px;
+.navbar-items ul li{
+  text-decoration: none;
+  display: inline-block;
+} */
+
+/* hero-area in app.js file */
+/* btnlink tag text-decoration  */
+.btnLink {
+  text-decoration: none;
+  color: white
+}
+.hero-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url('./images/img1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 555px;
+}
+/* vegetable component in app.js file */
+.vegetable-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+  url('./images/img3.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 555px;
+}
+/* designing vegetable text in vegetable.js component */
+
+.vegetable-text {
+  font-family: 'Roboto', sans-serif;
+}
+.vegetable-text h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.vegetable-text p {
+  font-weight: 200;
+}
+
+/* Moisture component designing */
+.moisture-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+  url('./images/hero-1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 625px;
+}
+.moisture-area h3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin: 100px;
+  margin-bottom: -100px;
+}
+.moisture-area h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200px;  
+  margin-top: -100;
+  text-align: center;
+}
+
+.moisture-area img {
+  margin-top: 50px;
+}
+
+/* intensity area  */
+
+.intesity-area {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), 
+  url('./images/hero-3.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 625px;
+}
+.intesity-area  h3 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin: 100px;
+  margin-bottom: -100px;
+}
+
+.intesity-area h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 200px;  
+  margin-top: -100;
+  text-align: center;
+}
+/* media queries for responsive web design */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .moisture-area img {
+    visibility: hidden;
+  }
+  .moisture-area h3 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+  }
+  .moisture-area h1 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;  
+  }
 }

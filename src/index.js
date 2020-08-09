@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Post from './post.js';
 import * as serviceWorker from './serviceWorker';
+import App from './App';
 
 ReactDOM.render(
-  <Post />,
+  <App />,
   document.getElementById('root')
 
 );

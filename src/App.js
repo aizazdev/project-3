@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-
+import Card from './Card';
+import Hero from './Hero';
+import Navbar from './Navbar';
+import VegetableSection from './Vegetables';
+import PageRoutes from './Router';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  return(
+  <>
+    <PageRoutes />
+    {/* <Card /> */}
+  </>
+  )
+
 }
+
 
 export default App;
