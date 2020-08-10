@@ -15,7 +15,7 @@ function Home() {
             <div className="vegetable-section">
              <VegetableSection />
             </div>
-            <div className="WhySmartIrrigation-section">
+            <div className="whysmartirrigation-section">
                 <WhySmartIrrigation />
             </div>
         </>
