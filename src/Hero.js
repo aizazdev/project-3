@@ -1,11 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Paper from '@material-ui/core/Paper';
+
 import Grid from '@material-ui/core/Grid';
-import HeroImg from './images/hero-2.jpg';
-import Logo from './images/logo-2.png';
-import {Link} from 'react-router-dom';
+
+import FullDialog from './Dialog';
+import useWebAnimations,{fadeInDown,flipInX
+
+} from "@wellyshen/use-web-animations";
 import './App.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +23,8 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Hero() {
   const classes = useStyles();
-
+  const { ref} = useWebAnimations({...fadeInDown});
+  const { ref2 } = useWebAnimations({...flipInX});
   return (
     <div className={classes.root}>
       <Grid container spacing={3}>
@@ -39,14 +41,14 @@ export default function Hero() {
                     color: "white",
                     marginTop: "120px"
                   }}>
-                      <h1 style={
+                      <h1 ref={ref} style={
                         {fontFamily: 'Roboto, sans-serif',
                           fontSize: "60px",
                           marginBottom: "-20px",
                           background: "black"
                       }
                       }>Wifi Based Irrigation System</h1>
-                      <h3 style={
+                      <h3 ref={ref} style={
                         {fontFamily: 'Roboto, sans-serif',
                         fontSize: "25px",
                           fontWeight: "200",
@@ -54,12 +56,8 @@ export default function Hero() {
                           background: "black",
                         }
                       }>Using Soil Moisture And Light Intesity Sensor</h3>
-                      <Button variant="contained" color="secondary">
-                        <Link to="/moisture" className="btnLink">Moisture Level</Link>
-                    </Button>
-                    <Button variant="contained" color="secondary">
-                       <Link to="/intensity" className="btnLink">Intensity Level</Link>
-                    </Button>
+                      <FullDialog ref={ref2} type="moisture" btn="moisture Level"/>
+                      <FullDialog type="light" btn="Intensity Level"/>
                   </div>
                  </Grid>
                 <Grid item xs={2}>

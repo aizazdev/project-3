@@ -25,7 +25,7 @@
   text-decoration: none;
   color: white
 }
-.hero-area {
+.hero-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
   url('./images/img1.jpg');
   background-size: cover;
@@ -57,6 +57,33 @@
 
 .vegetable-text p {
   font-weight: 200;
+}
+/* Why smart irrigation component designing */
+
+.whysmartirrigation-section {
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./images/img5.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 440px;
+}
+
+.whysmartirrigation-section h1 {
+  text-align: "center";
+  justify-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.whysmartirrigation-section img {
+  height: 150px;
+  margin-left: -65px !important;
+}
+.whysmartirrigation-section h3, p { 
+  color: white;
 }
 
 /* Moisture component designing */
